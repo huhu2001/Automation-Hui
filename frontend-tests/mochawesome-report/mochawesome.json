@@ -1,0 +1,176 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-11-05T10:57:07.715Z",
+    "end": "2021-11-05T10:57:18.890Z",
+    "duration": 11175,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5cb97c0b-7c17-4f18-9bc9-53e48f45d8a5",
+      "title": "",
+      "fullFile": "cypress/integration/regression-test-suite.spec.js",
+      "file": "cypress/integration/regression-test-suite.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6435277b-c29c-464a-86a2-e7954c1a8d22",
+          "title": "Regression test suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "confirm use",
+              "fullTitle": "Regression test suite confirm use",
+              "timedOut": null,
+              "duration": 2008,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains(\"Tester Hotel Overview\");\ncy.get(\".username\").should(\"have.text\", \"Welcome tester01!\");",
+              "err": {},
+              "uuid": "dd9b3f86-af55-49d5-adb7-482c03fc985b",
+              "parentUUID": "6435277b-c29c-464a-86a2-e7954c1a8d22",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "rooms view",
+              "fullTitle": "Regression test suite rooms view",
+              "timedOut": null,
+              "duration": 1763,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#app');\ncy.get(\".blocks\");\ncy.get(\".blocks > :nth-child(1)\");\ncy.get(\":nth-child(1) > .btn\").click();",
+              "err": {},
+              "uuid": "dfcbc15e-2020-4a56-a8bd-3497c3c883e6",
+              "parentUUID": "6435277b-c29c-464a-86a2-e7954c1a8d22",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Bill view",
+              "fullTitle": "Regression test suite Bill view",
+              "timedOut": null,
+              "duration": 1717,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#app');\ncy.get('.blocks');\ncy.get('.blocks > :nth-child(3)');\ncy.get(':nth-child(3) > .btn').click();",
+              "err": {},
+              "uuid": "07a81f41-e87d-443d-8aff-78139c42c408",
+              "parentUUID": "6435277b-c29c-464a-86a2-e7954c1a8d22",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Create bill",
+              "fullTitle": "Regression test suite Create bill",
+              "timedOut": null,
+              "duration": 2222,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#app');\ncy.get('.blocks');\ncy.get('.blocks > :nth-child(3)');\ncy.get(':nth-child(3) > .btn').click();\ncy.contains(\"Bills\");\ncy.get(\"h2 > .btn\").click();\ncy.get('#app');\ncy.get(\"#app > :nth-child(2)\");\ncy.get('input').type('5000');\ncy.get(\".checkbox\").click();\ncy.get(\".blue\").click();",
+              "err": {},
+              "uuid": "7dbe1f61-873b-4d13-b57b-6924d615ed3d",
+              "parentUUID": "6435277b-c29c-464a-86a2-e7954c1a8d22",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Confirm bill",
+              "fullTitle": "Regression test suite Confirm bill",
+              "timedOut": null,
+              "duration": 1612,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#app');\ncy.get('.blocks');\ncy.get('.blocks > :nth-child(3)');\ncy.get(\":nth-child(3) > :nth-child(2)\").should(\"have.text\", \"Total: 1 (5000kr)\");",
+              "err": {},
+              "uuid": "c2492811-092f-4da1-a4b6-a833c49b8fe1",
+              "parentUUID": "6435277b-c29c-464a-86a2-e7954c1a8d22",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "dd9b3f86-af55-49d5-adb7-482c03fc985b",
+            "dfcbc15e-2020-4a56-a8bd-3497c3c883e6",
+            "07a81f41-e87d-443d-8aff-78139c42c408",
+            "7dbe1f61-873b-4d13-b57b-6924d615ed3d",
+            "c2492811-092f-4da1-a4b6-a833c49b8fe1"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9322,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.0"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.0.0"
+    }
+  }
+}
