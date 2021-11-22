@@ -27,42 +27,23 @@ describe("Regression test suite",() =>{
   
     //this is test case2
       it('Rooms view',() => {
-          cy.get('#app')
-          cy.get('.blocks')
-          cy.get('.blocks > :nth-child(1)')
-          cy.get(':nth-child(1) > .btn').click()
+          dashboardFuncs.roomsView(cy)
   
       })
   
     //this is test case3
       it('Bill view',() => {
-          cy.get('#app')
-          cy.get('.blocks')
-          cy.get('.blocks > :nth-child(3)')
-          cy.get(':nth-child(3) > .btn').click()
+          dashboardFuncs.billView(cy)
       }) 
   
     //this is test case4
       it('Create bill',() => {
-         cy.get('#app')
-         cy.get('.blocks')
-         cy.get('.blocks > :nth-child(3)')
-         cy.get(':nth-child(3) > .btn').click()
-         cy.contains("Bills")
-         cy.get('h2 > .btn').click()
-         cy.get('#app')
-         cy.get('#app > :nth-child(2)')
-         cy.get('input').type('5000')
-         cy.get('.checkbox').click()
-         cy.get('.blue').click()
+         dashboardFuncs.creareBill(cy)
       })
   
       //this is test case5
       it('Confirm bill',() => {
-          cy.get('#app')
-          cy.get('.blocks')
-          cy.get('.blocks > :nth-child(3)')
-          cy.get(':nth-child(3) > :nth-child(2)').should('have.text','Total: 1 (5000kr)')
+          dashboardFuncs.confirmBill(cy)
         
        })
   }) 

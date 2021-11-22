@@ -1,5 +1,7 @@
 /// <reference types="cypress" />
 
+const targets = require("../targets/targets")
+
 
 //elements
 const loginText = 'h2'
@@ -12,8 +14,8 @@ const loginButton = '.btn'
 //Actions/functions
 function loginUse(cy){
     cy.get(loginText).should('have.text', 'Login')
-    cy.get(usernameTextfield).type('tester01')
-    cy.get(passwordTextfield).type('GteteqbQQgSr88SwNExUQv2ydb7xuf8c')
+    cy.get(usernameTextfield).type(targets.username)
+    cy.get(passwordTextfield).type(targets.password)
     cy.get(loginButton).click()
 }
 

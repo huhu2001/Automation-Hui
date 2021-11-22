@@ -37,14 +37,14 @@ function billView(cy){
 function creareBill(cy){
     cy.get(overviewLayer)
     cy.get(overviewblock)
-    cy.get(billBloc)
+    cy.get(billBlock)
     cy.get(billButton).click()
-    cy.contains("Bills")
+    cy.contains('Bills')
     cy.get(createButton).click()
     cy.get(overviewLayer)
     cy.get(billLayer)
     cy.get(billpriceValuefield ).type('5000')
-    cy.get(billpaidBox ).click()
+    cy.get(billpaidBox).click()
     cy.get(billsaveButton).click()
 }
 
@@ -56,7 +56,7 @@ function confirmBill(cy){
 }
 
 function loginOut(cy){
-    cy.get(loginoutButton ).click() 
+    cy.get(loginoutButton).click() 
 }
 //exports
 module.exports = {
